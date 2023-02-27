@@ -8,40 +8,64 @@
   
   <title>Frontend Mentor | Results summary component</title>
 
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
   </style>
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <div class="page-wrapper">
+      <div class="container">
+        <div class="heading">
+          <div class="header">
+            <span>Your Result</span>
+            <h1>
+              76
+              <span>of 100</span>
+            </h1>
+          </div>
+          <div class="header-caption">
+            <h3>Great</h3>
+            <p>You scored higher than 65% of the <br/>people who have taken these tests.</p>
+          </div>
+        </div>
+        <div class="summary-container">
+          <h4>Summary</h4>
+          <div class="summary-items">
+            <div class="item">
+              <i><img src="./assets/images/icon-reaction.svg" alt="Reaction">Reaction</i>
+              <span><strong>80</strong> / 100</span>
+            </div>
+            <div class="item">
+              <i><img src="./assets/images/icon-memory.svg" alt="Memory">Memory</i>
+              <span><strong>92</strong> / 100</span>
+            </div>
+            <div class="item">
+              <i><img src="./assets/images/icon-verbal.svg" alt="Verbal">Verbal</i>
+              <span><strong>61</strong> / 100</span>
+            </div>
+            <div class="item">
+              <i><img src="./assets/images/icon-visual.svg" alt="Visual">Visual</i>
+              <span><strong>72</strong> / 100</span>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="btn btn-continue">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
 </body>
 </html>

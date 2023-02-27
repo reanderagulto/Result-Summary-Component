@@ -1,0 +1,226 @@
+:root{
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    --bg-base-color: rgb(46,43,233);
+    --bg-gradient: linear-gradient(0deg, rgba(46,43,233,1) 22%, rgba(120,87,255,1) 75%);
+
+    --circle-base-color: rgb(78,33,202);
+    --circle-bg-gradient: linear-gradient(180deg, rgba(78,33,202,1) 51%, rgba(36,33,202,0) 87%);
+
+    --white: #ffffff;
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    --font-size: 18px;
+    --font-family: 'Hanken Grotesk', sans-serif;
+
+}
+
+body {
+    margin: 0;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.heading, .summary-container{
+    width: 100%;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.heading {
+    background: var(--bg-gradient);
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding: 2rem;
+    width: 100%;
+}
+
+.header h1{
+    width: 90px;
+    height: 90px;
+    margin: 1.2rem auto;
+    font-size: 3rem;
+    font-weight: 800;
+    background: var(--circle-bg-gradient);
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0.85rem;
+    border-radius: 50%;
+}
+
+.header h1 span{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header-caption p{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}
+
+.summary-container h4 {
+    margin: unset;
+    margin-bottom: 1.5rem;
+}
+
+.summary-items {
+    padding: 0 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.summary-items .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+}
+
+.summary-items .item i {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+}
+
+.summary-items .item i img{
+    margin-right: 0.8rem;
+}
+
+.summary-items .item:first-of-type i{
+    color: var(--light-red);
+}
+
+.summary-items .item:nth-of-type(2) i{
+    color: var(--orangey-yellow);
+}
+
+.summary-items .item:nth-of-type(3) i{
+    color: var(--green-teal);
+}
+
+.summary-items .item:nth-of-type(4) i{
+    color: var(--cobalt-blue);
+}
+
+.summary-container h4 {
+    margin: unset;
+    margin-bottom: 1.5rem;
+}
+
+.summary-items {
+    padding: 0 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.summary-items .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+}
+
+.summary-items .item i {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+}
+
+.summary-items .item i img{
+    margin-right: 0.8rem;
+}
+
+.summary-items .item:first-of-type i{
+    color: var(--light-red);
+}
+
+.summary-items .item:nth-of-type(2) i{
+    color: var(--orangey-yellow);
+}
+
+.summary-items .item:nth-of-type(3) i{
+    color: var(--green-teal);
+}
+
+.summary-items .item:nth-of-type(4) i{
+    color: var(--cobalt-blue);
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.btn.btn-continue {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: unset;
+    background-color: var(--dark-gray-blue);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}
+
+.header span,
+.header h1 span, 
+.header-caption p{
+    color: var(--light-lavender);
+    opacity: 0.8;    
+}
+
+.item span{
+    color: gray;
+    font-weight: 700;
+}
+
+.item span strong{
+    color: var(--dark-gray-blue);
+    font-weight: 800;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (min-width: 1024px){
+    .container{
+        flex-grow: 0;
+        flex-wrap: nowrap;
+        max-width: 768px;
+    }
+    .heading{
+        width: 40%;
+    }
+    .summary-container{
+        width: 60%;
+    }
+}
